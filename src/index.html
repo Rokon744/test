@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Html Tailwind css</title>
+</head>
+
+<body class="font-sans bg-gray-100">
+
+    <div class="main-all">
+        <nav class="p-4 w-full fixed">
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="text-white logo">
+                    <a href="#" class="text-lg font-semibold">
+                        <img src="./assets/Logo.png" alt="">
+                    </a>
+                </div>
+
+                <div class="hidden lg:flex space-x-7 text-[#1f00a3] text-[23px] font-semibold">
+                    <a href="#">Accompagenments</a>
+                    <a href="#">Opportunities</a>
+                    <a href="#">Conceils</a>
+                    <a href="#">Resourses</a>
+                    <a href="#">A Propos</a>
+                </div>
+
+                <button class="py-2 px-7 rounded-full hidden lg:flex text-white text-[23px] font-semibold"
+                    style="background-color: #1f00a3;">See Connecter</button>
+
+                <div class="lg:hidden">
+                    <!-- Mobile menu button -->
+                    <button id="mobile-menu-button" class="focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden lg:hidden bg-gray-800 p-4">
+                <a href="#" class="block text-white mb-2">Accompagenments</a>
+                <a href="#" class="block text-white mb-2">Opportunities</a>
+                <a href="#" class="block text-white mb-2">Conceils</a>
+                <a href="#" class="block text-white">Resourses</a>
+                <a href="#" class="block text-white">A Propos</a>
+                <button class="py-1 px-3 mt-3 rounded-full text-white text-[16px] font-semibold"
+                    style="background-color: #1f00a3;">See Connecter</button>
+            </div>
+        </nav>
+
+
+        <!-- main hero section -->
+        <section class="hero max-md:pt-20 md:pt-32 px-5 max-sm:px-2">
+            <div class="title text-[#1f00a3]">
+                <h2>Vendez-vous <span class="text-[#4e9d37]">mieux</span>.</h2>
+                <h2>Décrochez les</h2>
+                <h2 class="text-[#fe7d00] mb-4">meilleures opportunités?</h2>
+            </div>
+
+            <div class="para text-[18px] text-[#1f00a3] mt-8">
+                <p class="mb-4">Vous avez de l'ambition, des compétences et même de belles réalisations dans votre
+                    carrière. Vous postulez à des offres d'emploi mais :</p>
+            </div>
+
+            <div class="slider-text overflow-hidden">
+                <div class="hwrap">
+                    <div class="hmove">
+                        <div class="hslide flex flex-col">
+                            <h4 class="!text-[25px] text-[#1f00a3]">Vous avez du mal à décrocher</h4>
+                            <p class="!text-[20px] text-[#c80100]">un entretien.</p>
+                        </div>
+                        <div class="hslide flex flex-col">
+                            <h4 class="!text-[25px] text-[#1f00a3]">Vous avez du mal à décrocher</h4>
+                            <p class="!text-[20px] text-[#c80100]">un entretien.</p>
+                        </div>
+                        <div class="hslide flex flex-col">
+                            <h4 class="!text-[25px] text-[#1f00a3]">Vous avez du mal à décrocher</h4>
+                            <p class="!text-[20px] text-[#c80100]">un entretien.</p>
+                        </div>
+                        <div class="hslide flex flex-col">
+                            <h4 class="!text-[25px] text-[#1f00a3]">Vous avez du mal à décrocher</h4>
+                            <p class="!text-[20px] text-[#c80100]">un entretien.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow w-[180px] m-auto">
+                <img src="./assets/arrow.png" alt="">
+            </div>
+            <div class="para text-[18px] text-[#c80100]">
+                <p>Si vous vous retrouvez dans ces mots, cela signifie sûrement que vous ne savez pas vous vendre auprès
+                    des recruteurs.</p>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+    <script>
+        // Toggle mobile menu visibility
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
